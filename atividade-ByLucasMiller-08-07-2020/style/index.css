@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+/* usar ::before, :: after, ::first-letter, ::selection*/
+body {
+    /* background-color: #e6e6e6; */
+    font-family: 'Fondamento', cursive;
+    /* overflow-x: hidden; */
+}
+button {
+    max-width: 100px;
+    min-width: 50px;
+    padding: 5px;
+    font-family: 'Fondamento', cursive;
+    border: 2px solid #0563bb;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #0563bb;
+    font-size: 16px;
+    outline: none;
+}
+button:hover {
+    background-color: #0563bb;
+    color: #ffffff;
+}
+input[type=email] {
+    padding: 2px;
+    width: 100px;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+}
+input[type=email]:focus {
+    width: 180px;
+    color: rgba(31, 126, 143, 0.842);
+}
+input[type=text] {
+    padding: 5px;
+    width: 100px;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+}
+input[type=text]:focus {
+    width: 180px;
+    color: rgba(31, 126, 143, 0.842);
+}
+#cabecalho {
+    background-image: url('https://timeline.canaltech.com.br/309991.1400/estas-curiosidades-sobre-o-espaco-mostram-que-ainda-nao-sabemos-muito-sobre-ele.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-height: 700px;
+    min-height: 350px;
+    background-attachment: fixed;
+    padding: 50px;
+}
+#cabecalho nav {
+    position: absolute;
+    top: 70px;
+    left: 200px;
+    text-shadow: 10px 17px 5px rgb(201, 188, 188);
+}
+#home {
+    position: relative;
+    top: 70px;
+    left: 50px;
+}
+#contato {
+    position: relative;
+    top: 24px;
+    left: 128px;
+}
+#tables {
+    position: relative;
+    top: 47px;
+    left: 210px;
+}
+#cabecalho h1 {
+    text-shadow: 10px 17px 5px rgb(201, 188, 188);
+    font-size: 50px;
+    color: rgba(234, 240, 237, 0.925);
+    position: absolute;
+    top: 180px;
+    left: 360px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    min-width: 25%;
+    max-height: 50%;
+    min-height: 25%;
+}
+/* Quando o texto for selecionado... */
+::selection {
+    background-color: #000;
+    color: rgba(16, 151, 74, 0.63)/*#89a161*/;
+}
+/* Para os links */
+.links-cabecalho:link {
+    background-size: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}
+.links-cabecalho:visited {
+    font-weight: bold;
+    color: #ffffff;
+}
+.links-cabecalho:hover {
+    text-decoration: underline;
+    text-shadow: 15px 20px 2.5px rgb(201, 188, 188);
+}
+.links-cabecalho:active {
+    color: #00f;
+    background-color: #555675b2;
+}
+.img-body {
+    max-width: 480px;
+    min-width: 240px;
+    border-radius: 5%;
+}
+.img-body:hover {
+    box-shadow: 1px 4px 2px 9px rgba(223, 221, 221, 0.377);
+}
+main {
+    margin: auto;
+    max-width: 686px;
+    min-width: 300px;
+    max-height: 100%;
+    min-height: 50%;
+    font-size: 1.5em;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.5em;
+} 
+ul li {
+    list-style: none;
+}
+ol li {
+    list-style: upper-roman;
+    list-style-position: inside;
+}
+aside {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 115px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    background-color: #b4b4b4;
+    color: #ffffff;
+}
+span {
+    font-weight: bold;
+}
+figcaption p {
+    font-size: 13px;
+}
+/* form {
+    display: flex;
+    flex-wrap: wrap;
+} */
+.links:link {
+    text-decoration: none;
+    color: #1aa1b9;
+}
+.links:visited {
+    color: #0563bb;
+}
+.links:hover {
+    text-decoration: underline;
+}
+.links:active {
+    color: #00f;
+    background-color: #555675b2;
+}
+.footer:link {
+    text-decoration: none;
+    color: #00f;
+}
+.footer:visited {
+    color: rgb(255, 248, 248);
+}
+.footer:hover {
+    text-decoration: underline;
+}
+.footer:active {
+    color: #ffffff;
+}
+#referencia {
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+#social {
+    text-align: center;
+}
+#redes {
+    position: relative;
+    top: 20px;
+}
+#direitos {
+    text-align: justify;
+    text-justify: inter-word;
+}
+.fab {
+    color: #ffffff;
+    font-size: 1.1em;
+}
+.fa-linkedin-in {
+    position: relative;
+    right: 55px;
+    bottom: 28px;
+}
+.fa-instagram-square {
+    position: relative;
+    right: 2px;
+    top: 10px;
+}
+.fa-github {
+    position: relative;
+    left: 55px;
+    bottom: 67px;
+}
+#lucas-email {
+    position: relative;
+    bottom: 70px;
+}
+footer {
+    background-color: #606060;
+    color: #ffffff;
+    max-width: 100%;
+    min-width: 50%;
+    max-height: 600px;
+    min-height: 300px;
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 5px; 
+    margin-top: 10px;
+    padding-left: 30px;
+}
